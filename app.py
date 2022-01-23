@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.debug = True
  
 # adding configuration for using a sqlite database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Pass2020!@172.17.0.2/postgres'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Pass2020!@127.0.0.1/postgres'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
  
 # Creating an SQLAlchemy instance
