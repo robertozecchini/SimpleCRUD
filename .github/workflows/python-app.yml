@@ -25,6 +25,7 @@ jobs:
           MYSQL_ALLOW_EMPTY_PASSWORD: yes
           MYSQL_DATABASE: test
           MYSQL_ROOT_PASSWORD: test
+          MYSQL_ROOT_HOST: 127.0.0.1
         # Set health checks to wait until postgres has started
         options: >-
           --health-cmd="mysqladmin ping"
