@@ -9,7 +9,7 @@ app.debug = True
  
 # adding configuration for using a sqlite database
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Pass2020!@127.0.0.1/postgres'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:test@localhost/test'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:test@127.0.0.1/test'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
  
 # Creating an SQLAlchemy instance
