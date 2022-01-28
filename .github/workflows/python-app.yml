@@ -23,7 +23,7 @@ jobs:
         # Provide the password for postgres
         env:
           #MYSQL_ALLOW_EMPTY_PASSWORD: yes
-          #MYSQL_DATABASE: test
+          MYSQL_DATABASE: test
           MYSQL_ROOT_PASSWORD: test
           #MYSQL_ROOT_HOST: 0.0.0.0
         # Set health checks to wait until postgres has started
