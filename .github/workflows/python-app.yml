@@ -55,6 +55,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Verify MySQL connection from container 
       run: |
+        sudo apt-get update
         sudo apt-get install -y mysql-client
         mysql --host mysql -uroot -ptest -e "SHOW DATABASES"
     - name: Prepare db
