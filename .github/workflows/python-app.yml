@@ -57,7 +57,7 @@ jobs:
       run: |
         #sudo apt-get update
         #sudo apt-get install -y mysql-client
-        mysql --host mysql -uroot -ptest -e "SHOW DATABASES"
+        mysql --host 127.0.0.1 -uroot -ptest -e "SHOW DATABASES"
     - name: Prepare db
       run: |
         #flask db init
