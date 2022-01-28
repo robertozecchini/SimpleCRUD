@@ -22,10 +22,10 @@ jobs:
         image: mysql:5.7
         # Provide the password for postgres
         env:
-          MYSQL_ALLOW_EMPTY_PASSWORD: yes
-          MYSQL_DATABASE: test
+          #MYSQL_ALLOW_EMPTY_PASSWORD: yes
+          #MYSQL_DATABASE: test
           MYSQL_ROOT_PASSWORD: test
-          MYSQL_ROOT_HOST: 0.0.0.0
+          #MYSQL_ROOT_HOST: 0.0.0.0
         # Set health checks to wait until postgres has started
         options: >-
           --health-cmd="mysqladmin ping"
